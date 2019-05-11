@@ -1,0 +1,372 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+ body{
+     font-family: "Open Sans", Helvetica, arial, sans-serif;
+}
+/* Start Home Section */
+ .main{
+     background-image: url('../images/cover.jpg');
+     background-repeat: no-repeat;
+     height: 600px;
+     position: relative;
+     width: 100%;
+}
+ .main .layer{
+     background-color: rgba(163,29,196,0.4);
+     width: 100%;
+     height: 100%;
+}
+ .main .container-fluid{
+     z-index: 9999;
+}
+ .navbar-light .nav-item .nav-link{
+     color: #fff;
+     padding: 5px;
+     font-size: 16px;
+     line-height: 20px;
+     font-weight: 300;
+}
+ .navbar-light .navbar-brand {
+     color: #fff;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 20px;
+     margin-left: 50px;
+}
+ .navbar-light .navbar-brand:hover{
+     color: #fff;
+}
+ .navbar-light .navbar-nav{
+     margin-right: 50px;
+}
+ .main .main-caption{
+     position: relative;
+     margin-top: 80px;
+     color: #fff;
+     margin-left: 8%;
+     top: -80%;
+}
+ .main .main-caption .line-bar{
+     width: 45px;
+     height: 5px;
+     background-color: #BF360C;
+     margin-top: 15px;
+     margin-left: 0;
+}
+ .main .main-caption h3{
+     font-size: 42px;
+     font-weight: 700;
+     line-height: 46px;
+}
+ .main .main-caption h5{
+     font-size: 28px;
+     font-weight: 500;
+     line-height: 31px;
+}
+ .main .caption{
+     position: absolute;
+     top: 62%;
+     left: 8%;
+     color: #fff;
+}
+ .main .caption p{
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 28px;
+}
+ .main .caption .btn-caption{
+     color: #fff;
+     background-color: rgba(255,255,255,0.4);
+     border: 2px solid #fff;
+     padding: 8px 20px;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
+}
+ .main .caption .btn-caption i{
+     font-size: 11px;
+     padding: 4px;
+}
+ .main .caption .btn-caption:hover{
+     color: #444;
+     background-color: rgb(255,255,255);
+}
+/* End Home Section */
+/* Start About Section */
+ .about h3{
+     font-weight: 700;
+     font-size: 35px;
+     line-height: 39px;
+     color: #444;
+}
+ .about .line-bar{
+     width: 50px;
+     height: 4px;
+     background-color: #BF360C;
+     margin-top: 15px;
+     margin-bottom: 15px;
+}
+ .about p{
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+     color: #444;
+}
+ .about a{
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 22px;
+     color: #000;
+     text-decoration: none;
+     transition: all 0.4s ease-in-out;
+}
+ .about a i{
+     font-size: 11px;
+     padding: 4px;
+}
+ .about a:hover{
+     color: #444;
+}
+ .about .social i{
+     font-size: 20px;
+     color: #444;
+     padding: 10px;
+}
+ .about .social i:hover{
+     color: #000;
+}
+ .about img{
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+}
+/* End About Section */
+/* Start Project Experience Section*/
+ .project-experience{
+     background-color: #1a1a1a;
+     color: #fff;
+     height: auto;
+     position: relative;
+}
+ .projects .header h2{
+     text-align: center;
+     font-weight: 700;
+     font-size: 35px;
+     line-height: 39px;
+}
+ .projects .header p{
+     text-align: center;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+}
+ .projects .header .line-bar{
+     width: 60px;
+     height: 4px;
+     background-color: #BF360C;
+     margin-top: 15px;
+     margin: auto;
+}
+ .projects h5{
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 20px;
+     padding: 5px;
+}
+ .projects p{
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+     padding: 5px;
+}
+/* End Project Experience Section*/
+/* Start Portfolio Section */
+ .portfolio{
+     background-color: #fafafa;
+     height: auto;
+     position: relative;
+}
+ .portfolio .header h2{
+     text-align: center;
+     font-weight: 700;
+     font-size: 35px;
+     line-height: 39px;
+     color: #444;
+}
+ .portfolio .header p{
+     text-align: center;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+     color: #444;
+}
+ .portfolio .header .line-bar{
+     width: 40px;
+     height: 4px;
+     background-color: #BF360C;
+     margin-top: 15px;
+     margin: auto;
+}
+ .portfolio img{
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+     cursor: pointer;
+     display: block;
+     border: 0;
+}
+ .portfolio .lightbox-opend{
+     background-color: rgba(0,0,0,0.5);
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+     display: none;
+}
+ .portfolio .lightbox-opend #close{
+     position: absolute;
+     right: 4%;
+     top: 4%;
+     font-size: 18px;
+     cursor: pointer;
+     color: #444;
+     transition: all 0.4s ease-in-out;
+}
+ .portfolio .lightbox-opend #close:hover{
+     color: #fff;
+}
+ .portfolio .lightbox-opend img{
+     width: 50%;
+     height: auto;
+     max-width: 100%;
+     display: block;
+     margin: 0 auto;
+     padding: 40px 0 40px;
+     margin-top: 50px;
+}
+ .no-scroll{
+     overflow: hidden;
+}
+/* End Portfolio Section */
+/* Start Testimonials Section */
+ .testimonials{
+     background-color: #1a1a1a;
+     color: #fff;
+     height: auto;
+     position: relative;
+}
+ .testimonials .header h2{
+     text-align: center;
+     font-weight: 700;
+     font-size: 35px;
+     line-height: 39px;
+}
+ .testimonials .header p{
+     text-align: center;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+}
+ .testimonials .header .line-bar{
+     width: 40px;
+     height: 4px;
+     background-color: #BF360C;
+     margin-top: 15px;
+     margin: auto;
+}
+ .testimonial p{
+     text-align: center;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+}
+ .testimonial h5{
+     text-align: center;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 20px;
+}
+/* End Testimonials Section */
+/* Start Hire Me Section */
+ .hire-me{
+     background-color: #fafafa;
+     height: auto;
+}
+ .contact-me .header h2{
+     text-align: center;
+     font-weight: 700;
+     font-size: 35px;
+     line-height: 39px;
+     color: #444;
+}
+ .contact-me .header p{
+     text-align: center;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 28px;
+     color: #444;
+}
+ .contact-me .header .line-bar{
+     width: 40px;
+     height: 4px;
+     background-color: #BF360C;
+     margin-top: 15px;
+     margin: auto;
+}
+ .contact-me h5{
+     font-size: 14px;
+     font-weight: 700;
+     line-height: 15px;
+     color: #444;
+}
+ .contact-me p, .contact-me li{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 22px;
+     color: #9e9e9e;
+}
+ .contact-me ul li{
+     list-style: none;
+}
+ .form-control:focus{
+     border-color:#000;
+     box-shadow: none;
+}
+ .contact-me .form-row .btn-contact{
+     color: #fff;
+     background-color: #BF360C;
+     padding: 8px 25px;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
+}
+ .contact-me .form-row .btn-contact:hover{
+     background-color: #da3c0c;
+}
+/* End Hire Me Section */
+/* Start Footer Section */
+ .footer{
+     background-color: #1a1a1a;
+     text-align: center;
+     height: 53px;
+}
+ .footer .page-end{
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 22px;
+     padding-top: 15px;
+}
+ .footer .page-end p{
+     color: #444;
+}
+ .footer .page-end span{
+     color: #777;
+}
+/* End Footer Section */
+ 
