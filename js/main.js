@@ -5,25 +5,31 @@ $(document).ready(function() {
 
 	$('.main').height($(window).height());
 // Navbar
-	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-		if (scroll >= 200) {
-			$(".change").css({
-				"background": "white",
-				"boxShadow": "0px -3px 10px",
-				"position": 'fixed'
-			});
-			$(".nav-link").css("color", "#9e9e9e");
-			$(".navbar-brand").css("color", "black");
-		} else {
-			$(".change").css({
-				"background": "transparent",
-				"boxShadow": "none"
-			});
-			$(".nav-link").css("color", "white");
-			$(".navbar-brand").css("color", "white");
-		}
-	});
+$(window).scroll(function() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 50) {
+		$(".change").css({
+			"background": "white",
+			"boxShadow": "0px -2px 3px",
+			"position": "fixed",
+			"top": "0",
+			"left": "0",
+			"right": "0"
+		});
+		$(".nav-link").css("color", "black");
+		$(".navbar-brand").css("color", "black");
+	} else {
+		$(".change").css({
+			"background": "transparent",
+			"boxShadow": "0 0 0",
+			"position": "static"
+		});
+		$(".nav-link").css("color", "white");
+		$(".navbar-brand").css("color", "white");
+
+	}
+});
+
 
 	//Smoth Scroll
 
